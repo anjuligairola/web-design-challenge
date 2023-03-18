@@ -6,90 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Add a title here -->
-    <title>Latitude Vs Wind</title>
-
+    <title>Wind Speed</title>
 
     <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
 
     <!-- Our own CSS stylesheet -->
-    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+
+    <style>
+      /* Style for navbar */
+      nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+
+      /* Style for container */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Style for page title */
+      h1 {
+        font-size: 36px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      /* Style for jQuery and Bootstrap */
+      script {
+        src: https://code.jquery.com/jquery-2.1.4.min.js;
+        src: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js;
+      }
+    </style>
 
   </head>
 
   <body>
     <!-- Start of navbar -->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" style="color: aliceblue;" href="../index.html">Latitude</a>
-        </div>
-    
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="temp.html">Max Temperature</a></li>
-                <li><a href="humidity.html">Humidity</a></li>
-                <li><a href="cloudiness.html">Cloudiness</a></li>
-                <li><a href="wind.html">Wind Speed</a></li>
-              </ul>
-            </li>
-            <li><a href="../comparison.html">Comparison</a></li>
-            <li><a href="../data.html">Data</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
     </nav>
     <!-- End of navbar -->
 
     <!-- Start of container -->
-
     <div class="container">
-      <section class="row">
-        <div class="col-md-8">
-          <article>
-          <h1 class="Main-Header">Summary: Latitude vs Wind</h1>
-          <hr>
-          <img src="../assets/images/Fig4.png" id="chart-image">
-          
-        </article>
-        </div>
-            <!-- Start of Visualizations imageNav Area -->
-            <div class="col-md-4">
-              <article>
-              <div class="visualizations">
-                <h2 class="visualization-header">Visualizations</h2>
-                <p>Click any plot to get an in-depth analysis</p>
+      <h1>Wind Speed</h1>
+      <img src="../assets/images/Fig4.png" alt="Wind">
+      <p> On average the windspeed was low for this month across various Latitudes.</p>
 
-                <hr>
-                <div id="viz-images">
-                  <a href="temp.html"><img src="../assets/images/Fig1.png" id="image-photo"></a>
-                  <a href="humidity.html"><img src="../assets/images/Fig2.png" id="image-photo"></a>
-                  <a href="cloudiness.html"><img src="../assets/images/Fig3.png" id="image-photo"></a>
-                  <a href="wind.html"><img src="../assets/images/Fig4.png" id="image-photo"></a>
-                </div>
-              </div>
-            </article>
-            </div>
+     
+   
+    </div>
     <!-- End of container -->
 
-    <!-- jQuery CDN -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-    <!-- Bootstrap CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </body>
-
 </html>
